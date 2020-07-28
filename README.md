@@ -44,6 +44,8 @@ Then insert script into document just like the [official plugins](https://docsif
    bug描述：点击"1.1二级标题"后，子目录被展开，是正确的。再点击一次后，子目录应该被折叠。  
    bug节点： [add] 上传bug1.mp4 20200720   
    期望结果：点击"1.1二级标题"后，子目录被展开，是正确的。再点击一次后，子目录应该被折叠。  
+   解决方法：修改插件源码
+   解决节点：fix bug1 20200720
    
    
 

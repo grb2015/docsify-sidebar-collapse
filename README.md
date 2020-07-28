@@ -32,8 +32,12 @@ Then insert script into document just like the [official plugins](https://docsif
   <script src="//unpkg.com/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js">
 ```
 
-
- ## grb_docsify_practice/docs 是用![](https://docsify.js.org/#/zh-cn/quickstart)写的一个demo，用于测试插件。
+ ## grb added :
+ 
+ 1.  grb_docsify_practice/docs 是用docsify写的一个demo，用于测试docsify-sidebar-collapse插件。  
+ ![docsify](https://docsify.js.org/#/zh-cn/quickstart)  
+ 
+ 2. https://github.com/grb2015/docsify-sidebar-collapse/blob/master/grb_docsify_practice/docs/assets/js/docsify-sidebar-collapse.js 是来自https://github.com/grb2015/docsify-sidebar-collapse/tree/master/dist
 
  ## bug1: 目录点击后无法折叠
    bug演示：https://github.com/grb2015/docsify-sidebar-collapse/blob/master/assets/grb_bug1.mp4  

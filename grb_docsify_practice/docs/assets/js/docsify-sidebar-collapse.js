@@ -86,25 +86,33 @@
   }, false);
   document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('.sidebar-nav').addEventListener('click', function (e) {
+      console.log("######## e.target.tagName ",e.target.tagName)
       if (e.target.tagName === 'LI') {
         e.target.classList.toggle('open');
       }
 
       if (e.target.tagName === 'A') {
         var elp = e.target.parentElement;
+        console.log("######## A,e.target.parentElement,elp= ",e.target.parentElement)
 
         if (elp.tagName === 'LI') {
-          if (elp.classList.contains('open')) {
+          console.log("####### if LI,elp.classList = ",elp.classList)
+          if (elp.classList.contains('open') || elp.classList.contains('active') ) {
+            console.log("#### cur is open or ,set hold")
             requestAnimationFrame(function () {
               elp.classList.add('collapse');
               elp.classList.remove('open');
+              elp.classList.remove('active');
               elp.classList.add('hold');
             });
-          } else {
+          } 
+          else {
+            console.log("#### cur is not open ,set open")
             requestAnimationFrame(function () {
               if (elp.classList.contains('hold')) {
                 elp.classList.remove('collapse');
                 elp.classList.add('open');
+                elp.classList.add('active');
                 elp.classList.remove('hold');
               }
             });
